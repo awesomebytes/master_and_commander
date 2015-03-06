@@ -1,7 +1,7 @@
 master_and_commander
 ===
 
-Simple scripts making possible passing one topic (currently just `Twist`) from one roscore to 
+"Simple" scripts making possible passing one topic (currently just `Twist`) from one roscore to 
 other roscores.
 
 For example... you have your local roscore `http://localhost:11311`
@@ -37,6 +37,11 @@ The slaves publish at:
 
 
 In my tests.
+
+
+# Why did I do this?
+Because if I try to communicate with a socket after doing `rospy.init_node()` it doesn't work. It never connects. Seems like rospy takes over all the socketing stuff. (Which reminds me I should copy here the scripts with my trials on making it work).
+
 
 TODO: Make sure the folder exists in /dev/shm, if not, create it.
 
