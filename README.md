@@ -39,6 +39,9 @@ The slaves publish at:
 In my tests.
 
 TODO: Make sure the folder exists in /dev/shm, if not, create it.
+
 TODO: Unify everything into a single node (so they can both know what folder to watch, probably a random name)
+
 TODO: Generalize for any topic
+
 TODO: Generalize for any topic type (must fight with timestamp problem)
